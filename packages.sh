@@ -23,6 +23,7 @@ PACKAGES=(
   "bashtop"
   "curl"
   "wget"
+  "libfuse2"
 )
 
 for PACKAGE in "${PACKAGES[@]}"; do
