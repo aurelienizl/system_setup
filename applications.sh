@@ -43,6 +43,9 @@ else
     exit 1
 fi
 
+
+
+
 # Install Discord
 log_message "Installing Discord..."
 DISCORD_URL="https://discord.com/api/download?platform=linux&format=deb"
