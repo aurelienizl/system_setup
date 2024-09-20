@@ -43,6 +43,37 @@ else
     exit 1
 fi
 
+# Configure Visual Studio Code
+
+# Create User directory for Visual Studio Code
+mkdir -p ~/.config/Code/User
+
+# Create settings.json file with configurations
+cat > ~/.config/Code/User/settings.json <<EOL
+{
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.minimap.enabled": false,
+    "editor.suggestSelection": "first",
+    "workbench.startupEditor": "newUntitledFile",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "editor.rulers": [80, 120],
+    "editor.wordWrap": "on",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "telemetry.telemetryLevel": "off"
+}
+EOL
+
+log_message "Visual Studio Code configured successfully."
+
+
 # Python extension for Visual Studio Code
 code --install-extension ms-python.python
 # C/C++ extension for Visual Studio Code
