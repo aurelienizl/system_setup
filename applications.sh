@@ -43,8 +43,16 @@ else
     exit 1
 fi
 
-
-
+# Python extension for Visual Studio Code
+code --install-extension ms-python.python
+# C/C++ extension for Visual Studio Code
+code --install-extension ms-vscode.cpptools
+# Java extension for Visual Studio Code
+code --install-extension redhat.java
+# Docker extension for Visual Studio Code
+code --install-extension ms-azuretools.vscode-docker
+# Copilot extension for Visual Studio Code
+code --install-extension github.copilot
 
 # Install Discord
 log_message "Installing Discord..."
