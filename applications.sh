@@ -16,7 +16,7 @@ log_message "Starting application installation..."
 
 # Install JetBrains Toolbox
 log_message "Installing JetBrains Toolbox..."
-JETBRAINS_TOOLBOX_URL="https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.24.12080.tar.gz"
+JETBRAINS_TOOLBOX_URL="https://download-cdn.jetbrains.com/toolbox/jetbrains-toolbox-2.4.2.32922.tar.gz"
 if curl -L $JETBRAINS_TOOLBOX_URL -o $TEMP_DIR/jetbrains-toolbox.tar.gz; then
     tar -xzf $TEMP_DIR/jetbrains-toolbox.tar.gz -C $TEMP_DIR
     sudo mv $TEMP_DIR/jetbrains-toolbox-*/jetbrains-toolbox /usr/local/bin/
