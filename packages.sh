@@ -20,7 +20,7 @@ PACKAGES=(
   "clang-format"
   "vim"
   "git"
-  "bashtop"
+  "htop"
   "curl"
   "wget"
   "libfuse2"
