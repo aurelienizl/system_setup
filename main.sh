@@ -44,6 +44,7 @@ if echo $SSH_KEY_PASSPHRASE | openssl aes-256-cbc -d -in $ENCRYPTED_KEY_PATH -ou
     chmod 600 $DECRYPTED_KEY_PATH
     eval "$(ssh-agent -s)"
     ssh-add $DECRYPTED_KEY_PATH
+    ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.pub
     log_message $GREEN "SSH key decrypted and added to ssh-agent successfully."
 else
     log_message $RED "Error decrypting SSH key."
