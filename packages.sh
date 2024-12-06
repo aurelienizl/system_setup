@@ -24,8 +24,6 @@ PACKAGES=(
   "curl"
   "wget"
   "libfuse2"
-  "clamav" 
-  "clamav-daemon"
 )
 
 for PACKAGE in "${PACKAGES[@]}"; do
